@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Mega Repuestos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- ================= CABECERA (igual en todas las páginas) ================= -->
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">
+      <span id="logo-caja"></span>
+      <span id="nombre-empresa">Mega Repuestos</span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html" class="actual" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="banner-pagina">
+  <div class="contenedor">
+    <h1>Contacto</h1>
+    <p>Cuéntanos qué repuesto necesitas y te respondemos lo antes posible.</p>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <div class="contacto">
+      <div class="datos">
+        <h2>Hablemos</h2>
+        <p>Escríbenos o visítanos.</p>
+        <ul id="datos-contacto"></ul>
+      </div>
+      <form id="miFormulario" onsubmit="enviarFormulario(event)">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Ej: María González" required>
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" placeholder="Ej: maria@gmail.com" required>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Ej: Busco pastillas de freno para una Toyota Hilux 2015" required></textarea>
+        <div class="botones-form">
+          <button type="submit" class="boton rojo">Enviar por WhatsApp</button>
+          <button type="button" class="boton gris" onclick="borrarCampos()">Borrar campos</button>
+        </div>
+        <div id="alerta-exito" role="status">Mensaje listo. Se abrió WhatsApp para enviarlo.</div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= PIE DE PÁGINA ================= -->
+<footer class="pie">
+  <strong>Distribuimos en toda Bolivia</strong>
+  <small id="pie-texto"></small>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

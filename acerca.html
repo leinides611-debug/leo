@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acerca de | Mega Repuestos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- ================= CABECERA (igual en todas las páginas) ================= -->
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">
+      <span id="logo-caja"></span>
+      <span id="nombre-empresa">Mega Repuestos</span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="acerca.html" class="actual" aria-current="page">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="banner-pagina">
+  <div class="contenedor">
+    <h1>Acerca de nosotros</h1>
+    <p>Conoce nuestra historia, misión y visión.</p>
+  </div>
+</section>
+
+<section class="seccion clara">
+  <div class="contenedor">
+    <div class="acerca">
+      <div class="foto-acerca" id="foto-acerca"></div>
+      <div>
+        <h3>Antecedentes</h3>
+        <p>Mega Repuestos inicia sus actividades en octubre de 2009, con el objetivo de ser una empresa altamente especializada en la industria automotriz. Buscamos soluciones para nuestros clientes con una atención personalizada. Vendemos repuestos de vehículos a varios segmentos de la economía a nivel nacional, con una participación importante en el sector automotriz.</p>
+        <div class="dos-col">
+          <div>
+            <h3>Misión</h3>
+            <p>Impulsar el desarrollo de nuestros clientes ofreciéndoles productos y servicios que solucionen sus necesidades.</p>
+          </div>
+          <div>
+            <h3>Visión</h3>
+            <p>Ser una empresa de reconocido prestigio nacional e internacional, líder en el mercado andino y la primera opción de compra de nuestra línea de negocios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/oVWxZRGKZ6o" title="Video de presentación de Mega Repuestos" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= PIE DE PÁGINA ================= -->
+<footer class="pie">
+  <strong>Distribuimos en toda Bolivia</strong>
+  <small id="pie-texto"></small>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

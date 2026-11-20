@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventario | Mega Repuestos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- ================= CABECERA (igual en todas las páginas) ================= -->
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">
+      <span id="logo-caja"></span>
+      <span id="nombre-empresa">Mega Repuestos</span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="inventario.html" class="actual" aria-current="page">Inventario</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="banner-pagina">
+  <div class="contenedor">
+    <h1>Inventario disponible</h1>
+    <p>Consulta las existencias por categoría.</p>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <div class="pestanas" id="pestanas" role="tablist"></div>
+    <div class="tabla-caja" id="tabla-caja" role="tabpanel"></div>
+  </div>
+</section>
+</main>
+
+<!-- ================= PIE DE PÁGINA ================= -->
+<footer class="pie">
+  <strong>Distribuimos en toda Bolivia</strong>
+  <small id="pie-texto"></small>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

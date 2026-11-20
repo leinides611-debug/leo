@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | Mega Repuestos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- ================= CABECERA (igual en todas las páginas) ================= -->
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">
+      <span id="logo-caja"></span>
+      <span id="nombre-empresa">Mega Repuestos</span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html" class="actual" aria-current="page">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="portada">
+  <div class="fondo" id="portada-fondo" aria-hidden="true"></div>
+  <div class="contenedor">
+    <h1>Repuestos para que tu vehículo no se detenga</h1>
+    <p>Motores, aceites, llantas y más, con atención personalizada y envíos a toda Bolivia.</p>
+    <div class="acciones">
+      <a class="boton rojo" href="catalogo.html">Ver catálogo</a>
+      <a class="boton claro" href="contacto.html">Pedir cotización</a>
+    </div>
+  </div>
+</section>
+
+<section class="seccion clara">
+  <div class="contenedor">
+    <h2>Lo que tenemos para ti</h2>
+    <p class="intro">Elige una categoría para ver las existencias.</p>
+    <div class="categorias" id="lista-categorias"></div>
+  </div>
+</section>
+</main>
+
+<!-- ================= PIE DE PÁGINA ================= -->
+<footer class="pie">
+  <strong>Distribuimos en toda Bolivia</strong>
+  <small id="pie-texto"></small>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
